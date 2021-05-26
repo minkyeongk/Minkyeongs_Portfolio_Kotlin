@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Minkyeong\'s Portfolio</string>
+    <string name="loading">Loading</string>
+    <string name="language">Language : %s</string>
+    <string name="search_hint">GitHub Repository</string>
+    <string name="no_results">No results</string>
+    <string name="unknown">\?</string>
+    <string name="retry">Retry</string>
+    <string name="user_name">minkyeongk</string>
+    <string name="user_profile">user_profile</string>
+    <string name="user_nickname">minkyeong</string>
+    <string name="user_bio">Android Developer</string>
+</resources>

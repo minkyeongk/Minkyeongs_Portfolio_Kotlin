@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/constraint_main"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroud_purple"
+    tools:context=".ui.SplashActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="50dp"
+            android:orientation="vertical"
+            android:layout_gravity="center">
+            <androidx.cardview.widget.CardView
+                android:id="@+id/profile_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"
+                app:cardCornerRadius="75dp"
+                android:transitionName="profile">
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/my_img"/>
+            </androidx.cardview.widget.CardView>
+            <TextView
+                android:fontFamily="sans-serif-condensed-light"
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="38dp"
+                android:text="Minkyeong Kim"
+                tools:layout_editor_absoluteX="170dp"
+                tools:layout_editor_absoluteY="299dp"
+                android:textStyle="bold"
+                android:textColor="@color/white"/>
+            <TextView
+                android:fontFamily="sans-serif-condensed-light"
+                android:id="@+id/explain"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:text="Android, Kotlin, ML/DL Developer"
+                tools:layout_editor_absoluteX="170dp"
+                tools:layout_editor_absoluteY="299dp"
+                android:textStyle="bold"
+                android:textColor="@color/white"/>
+        </LinearLayout>
+
+        <GridLayout
+            android:id="@+id/grid_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:columnCount="2"
+            android:orientation="horizontal"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/profile"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:textSize="18dp"
+                android:fontFamily="sans-serif-condensed-light"
+                android:backgroundTint="#C4DEFF"
+                android:textColor="@color/white"
+                android:id="@+id/project_button"
+                android:background="@drawable/main_button"
+                android:shadowRadius="@android:integer/config_longAnimTime"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:textStyle="bold"
+                android:text="Projects"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="20dp" />
+            <androidx.appcompat.widget.AppCompatButton
+                android:textSize="18dp"
+                android:fontFamily="sans-serif-condensed-light"
+                android:backgroundTint="#C4DEFF"
+                android:textColor="@color/white"
+                android:id="@+id/github_button"
+                android:background="@drawable/main_button"
+                android:shadowRadius="@android:integer/config_longAnimTime"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:textStyle="bold"
+                android:text="Github"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="20dp"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:textSize="18dp"
+                android:fontFamily="sans-serif-condensed-light"
+                android:backgroundTint="#C4DEFF"
+                android:textColor="@color/white"
+                android:id="@+id/blog_button"
+                android:background="@drawable/main_button"
+                android:shadowRadius="@android:integer/config_longAnimTime"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/project_button"
+                android:textStyle="bold"
+                android:text="Blog"
+                android:layout_marginRight="10dp"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:textSize="18dp"
+                android:fontFamily="sans-serif-condensed-light"
+                android:backgroundTint="#C4DEFF"
+                android:textColor="@color/white"
+                android:id="@+id/resume_button"
+                android:background="@drawable/main_button"
+                android:shadowRadius="@android:integer/config_longAnimTime"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/github_button"
+                android:textStyle="bold"
+                android:text="Resume"
+                android:layout_marginLeft="10dp"/>
+        </GridLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
