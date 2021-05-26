@@ -1,14 +1,10 @@
 package com.example.minkyeongsportfolio.ui
 
-import android.app.ActivityOptions
-import android.content.Intent
-import android.opengl.Visibility
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
 import android.util.Log
-import android.util.Pair
 import android.view.View
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.bumptech.glide.Glide
@@ -16,8 +12,7 @@ import com.example.minkyeongsportfolio.R
 import com.example.minkyeongsportfolio.model.GithubUserInfo
 import com.example.minkyeongsportfolio.model.Repo
 import kotlinx.android.synthetic.main.activity_github.*
-import kotlinx.android.synthetic.main.activity_main.*
-import org.sopt.soptseminar_week1.api.RetrofitServiceCreator
+import com.example.minkyeongsportfolio.api.RetrofitServiceCreator
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response

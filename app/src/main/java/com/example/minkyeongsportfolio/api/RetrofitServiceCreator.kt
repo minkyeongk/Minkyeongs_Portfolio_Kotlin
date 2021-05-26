@@ -1,4 +1,4 @@
-package org.sopt.soptseminar_week1.api
+package com.example.minkyeongsportfolio.api
 
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory

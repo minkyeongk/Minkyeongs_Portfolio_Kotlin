@@ -1,4 +1,4 @@
-package org.sopt.soptseminar_week1.api
+package com.example.minkyeongsportfolio.api
 
 import com.example.minkyeongsportfolio.model.GithubUserInfo
 import com.example.minkyeongsportfolio.model.Repo
