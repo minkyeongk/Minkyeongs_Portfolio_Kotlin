@@ -1,5 +1,6 @@
 # Minkyeong's Portfolio (Kotlin)
 
+
 ### 프로젝트, 깃허브, 블로그, 이력서를 포함한 포트폴리오 앱 입니다. 
 
 ![포트폴리오 앱](https://user-images.githubusercontent.com/50983832/121564631-a2aa4c80-ca56-11eb-813b-688dd3016717.gif)
@@ -9,6 +10,7 @@
 - BLOG : Tistory 블로그로 연결됩니다. 
 - RESUME : 지원 예정입니다. 
 
+______________________
 ### 구현 예정 테이블
 Status | Category | Content |
 |:----:|:--------:| :------:|
